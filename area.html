@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Document</title>
+</head>
+<body>
+    <div class="center-div">
+        <section class="main-content">
+            <a href="/"><button class="primary-btn">&#129136; Back</button></a>
+            <h1>Calculate area</h1>
+            <h3>Select an option to calculate area according to data you have </h3>
+            <form class= "form-area">
+                <div class="area-label-div">
+                    <label class="labelForarea" for="area1">
+                        <input type="radio" id="area1" name="base-height" value="base-height1">
+                       if you have base and height </label>
+                </div>
+                <div class="area-label-div">
+                    <label class="labelForarea" for="area2">
+                        <input type="radio" id="area2" name="base-height" value="base-height2">
+                        If you have length of 3 sides</label>
+                </div>  
+                <div class="area-label-div">
+                    <label class="labelForarea" for="area3">
+                        <input type="radio" id="area3" name="base-height" value="base-height3">
+                        If you have length of 2 sides with angle </label>
+                </div>        
+            </form>
+            <hr>
+            <div class="area-calc-div">
+                <form class="form formForAreaCal">
+                    
+                    <label class="input-label">base=
+                        <input class="inputBox  inputInOption1" type="number" min="0.0001" step="0.00001" required>
+                    </label>
+
+                    <label class="input-label">height=
+                        <input class="inputBox  inputInOption1" type="number" min="0.0001" step="0.00001" required>
+                    </label>
+
+                    <button class="secondary-btn" id="submitBtn">calculate</button>
+                </form>
+                <h2>calculated area will appear here</h2>
+                <div class="output">
+                    <label class="label">Area=</label>
+                    <div class="show-output"></div>
+                </div>
+            </div>
+            <div class="area-calc-div">
+                <form class="form formForAreaCal">
+                    
+                    <label class="input-label">a=
+                        <input class="inputBox  inputInOption2" type="number" min="0.0001" step="0.00001" required>
+                    </label>
+
+                    <label class="input-label">b=
+                        <input class="inputBox  inputInOption2" type="number" min="0.0001" step="0.00001" required>
+                    </label>
+
+                    <label class="input-label">c=
+                        <input class="inputBox  inputInOption2" type="number" min="0.0001" step="0.00001" required>
+                    </label>
+                    
+                    
+                    <button class="secondary-btn" id="submitBtn">calculate</button>
+                </form>
+                <h2>calculated area will appear here</h2>
+                <div class="output">
+                    <label class="label">Area=</label>
+                    <div class="show-output"></div>
+                </div>
+            </div>
+            <div class="area-calc-div">
+                <form class="form formForAreaCal">
+                    
+                    <label class="input-label">b=
+                        <input class="inputBox  inputInOption3" type="number" min="0.0001" step="0.00001" required>
+                    </label>
+
+                    <label class="input-label">c=
+                        <input class="inputBox  inputInOption3" type="number" min="0.0001" step="0.00001" required>
+                    </label>
+
+                    <label class="input-label">∠A°=
+                        <input class="inputBox  inputInOption3" type="number" min="0.0001" step="0.00001" required>
+                    </label>
+                    
+                    
+                    <button class="secondary-btn" id="submitBtn">calculate</button>
+                </form>
+                <h2>calculated area will appear here</h2>
+                <div class="output">
+                    <label class="out-label">Area=</label>
+                    <div class="show-output"></div>
+                </div>
+            </div>
+            
+        </section>
+
+    </div>
+    <script src="area.js"></script>
+</body>
+</html>

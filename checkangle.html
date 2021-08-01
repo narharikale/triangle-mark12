@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Document</title>
+</head>
+<body>
+    <div class="center-div">
+        <section class="main-content"> 
+            <a href="/"><button class="primary-btn">&#129136; Back</button></a>
+            <h1>Enter the angles in below input boxes and we will tell you if those angles make a Triangle OR not </h1>
+            <form id="formForInput">
+                <label class="input-label">A=
+                    <input class="inputBox angle-input"  type="number" min="1" max="180" required>
+                </label>
+                <label class="input-label">B=
+                    <input class="inputBox angle-input"  type="number" min="1" max="180" required>
+                </label>
+                <label class="input-label">C=
+                    <input class="inputBox angle-input"  type="number" min="1" max="180" required>
+                </label>
+                
+                <button class="secondary-btn " type="submit">Submit</button>
+                
+            </form>
+            <div class="output">
+                <div id="show-output">Output will be shown here</div>
+            </div>
+        </section>
+
+    </div>
+    <script src="checkangle.js"></script>
+    
+</body>
+</html>
